@@ -22,8 +22,6 @@ class ImageSiteCrawlingRepository: ImageDataSource {
                 val name = it.getElementsByTag("h5").first()
                 items.add(ImageData(img.attr("data-src"), name.text()))
             }
-
-            val gson = Gson().toJson(items)
             ImageResponse(items)
         }
     }
