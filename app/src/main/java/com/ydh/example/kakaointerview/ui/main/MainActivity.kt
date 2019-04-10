@@ -57,7 +57,9 @@ class MainActivity : AppCompatActivity() {
             this.lifecycleOwner = this@MainActivity
         }
         mainViewModel.errorMessage.observe(this@MainActivity, Observer{ errMessage ->
-            Snackbar.make(viewDataBinding.root, errMessage, Snackbar.LENGTH_LONG).show()
+            if(!errMessage.isEmpty()) {
+                Snackbar.make(viewDataBinding.root, errMessage, Snackbar.LENGTH_LONG).show()
+            }
         })
     }
 
