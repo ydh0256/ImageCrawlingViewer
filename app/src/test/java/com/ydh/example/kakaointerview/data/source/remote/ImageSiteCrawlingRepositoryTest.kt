@@ -5,6 +5,9 @@ import org.junit.Test
 
 import org.junit.Assert.*
 
+/**
+ * Testing for [ImageSiteCrawlingRepository]
+ */
 class ImageSiteCrawlingRepositoryTest {
 
     lateinit var imageSiteCrawlingRepository: ImageSiteCrawlingRepository

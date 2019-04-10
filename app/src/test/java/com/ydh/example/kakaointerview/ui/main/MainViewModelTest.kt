@@ -17,7 +17,9 @@ import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
 import org.mockito.MockitoAnnotations
 
-
+/**
+ * Testing for [MainViewModel]
+ */
 class MainViewModelTest {
 
     @get:Rule

@@ -21,8 +21,8 @@ object CustomDataBind {
     }
 
 
-    @BindingAdapter(value = ["app:imageUrl", "app:isThumbnail"], requireAll = false)
-    @JvmStatic fun loadImage(imageView: ImageView, imageUrl: String, isThumbnail: Boolean = false) {
+    @BindingAdapter(value = ["app:imageUrl", "app:thubnailMultiplier"], requireAll = false)
+    @JvmStatic fun loadImage(imageView: ImageView, imageUrl: String, thubnailMultiplier: Float = 1.0f) {
         val glide = Glide.with(imageView.context)
             .load(imageUrl)
             .apply(RequestOptions().apply(){
@@ -30,7 +30,7 @@ object CustomDataBind {
                 val color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
                 placeholder(ColorDrawable(color))
             })
-        if(isThumbnail) glide.thumbnail(0.1f)
+        glide.thumbnail(thubnailMultiplier)
         glide.into(imageView)
 
     }

@@ -50,9 +50,9 @@ val adapterModule = module {
 // 로컬
 //val appModules = listOf(localRepositoryModule, viewModelModule, adapterModule)
 // 크롤링
-//val appModules = listOf(crawlingRepositoryModule, viewModelModule, adapterModule)
+val appModules = listOf(crawlingRepositoryModule, viewModelModule, adapterModule)
 // Http
-val appModules = listOf(apiRepositoryModule, viewModelModule, adapterModule)
+//val appModules = listOf(apiRepositoryModule, viewModelModule, adapterModule)
 
 private fun provideOkHttpClient(
     interceptor: HttpLoggingInterceptor

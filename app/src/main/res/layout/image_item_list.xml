@@ -16,7 +16,7 @@
                 android:layout_height="56dp"
                 android:scaleType="centerCrop"
                 app:imageUrl="@{imageData.imageUrl}"
-                app:isThumbnail="@{true}"/>
+                app:thubnailMultiplier="@{0.2f}"/>
         <TextView
                 android:id="@+id/imageName"
                 android:layout_width="wrap_content"

@@ -5,6 +5,10 @@ import org.junit.Test
 
 import org.junit.Assert.*
 
+
+/**
+ * Testing for [ImageLocalRepository]
+ */
 class ImageLocalRepositoryTest {
 
     lateinit var imageLocalRepository: ImageLocalRepository

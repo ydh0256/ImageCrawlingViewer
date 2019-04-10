@@ -20,12 +20,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Instrumented test, which will execute on an Android device.
- *
- * See [testing documentation](http://d.android.com/tools/testing).
+ * Testing for [MainActivity]
+ * 메뉴의 설정 변경이 잘 반영되는지 테스트
  */
+
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class MainActivityScreenTest {
     @Rule
     @JvmField var mainActivityTestRule = ActivityTestRule<MainActivity>(MainActivity::class.java)
 
